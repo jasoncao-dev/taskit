@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:taskit/theme.dart';
 import 'firebase_options.dart';
 import 'package:taskit/widgets/homePage.dart';
 
@@ -18,9 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'taskit',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-      ),
+      theme: ThemeData(primaryColor: actionBgClr, focusColor: actionBgClr),
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
     );

@@ -1,4 +1,4 @@
-# taskit
+# taskit (ASE 456 Final Project)
 
 ## Overview
 
@@ -37,9 +37,10 @@ taskit is a personal time-management application that helps students to record t
     id: id(), // auto generated id
     name: string,
     tag: string,
-    date: timestamp,
-    startTime: timestamp,
-    endTime: timestamp
+    note: string,
+    date: string,
+    startTime: string,
+    endTime: string
   }
   ```
 - Sample data
@@ -47,11 +48,11 @@ taskit is a personal time-management application that helps students to record t
     {
         "id": "absCJNmmtFxtDwDXawfo",
         "name": "Learn Flutter",
-        "note": "",
+        "note": "Learn how to build stateful widget",
         "tag": "Study",
-        "date": "October 23, 2022 at 12:00:00 AM UTC-4",
-        "startTime": "October 23, 2022 at 11:30:00 AM UTC-4",
-        "endTime": "October 23, 2022 at 12:30:00 PM UTC-4"
+        "date": "12/12/2022",
+        "startTime": "11:30 AM",
+        "endTime": "12:30 PM"
     }
     ```
 ## How to implement?

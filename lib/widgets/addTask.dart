@@ -22,7 +22,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
   DateTime _selectedDate = DateTime.now();
   String _startTime = DateFormat("hh:mm a").format(DateTime.now()).toString();
   String _endTime = DateFormat("hh:mm a")
-      .format(DateTime.now().add(Duration(hours: 1)))
+      .format(DateTime.now().add(const Duration(hours: 1)))
       .toString();
 
   @override
@@ -146,8 +146,8 @@ class _AddTaskPageState extends State<AddTaskPage> {
         lastDate: DateTime(2023),
         builder: (context, child) {
           return Theme(
-            data: Theme.of(context)
-                .copyWith(colorScheme: ColorScheme.light(primary: actionBgClr)),
+            data: Theme.of(context).copyWith(
+                colorScheme: const ColorScheme.light(primary: actionBgClr)),
             child: child!,
           );
         });
@@ -186,8 +186,8 @@ class _AddTaskPageState extends State<AddTaskPage> {
       initialEntryMode: TimePickerEntryMode.input,
       builder: (context, child) {
         return Theme(
-          data: Theme.of(context)
-              .copyWith(colorScheme: ColorScheme.light(primary: actionBgClr)),
+          data: Theme.of(context).copyWith(
+              colorScheme: const ColorScheme.light(primary: actionBgClr)),
           child: child!,
         );
       });

@@ -27,10 +27,11 @@ class AddTaskButton extends StatelessWidget {
           SizedBox(
             width: 5,
           ),
-          Text(
+          Expanded(
+              child: Text(
             'Add Task',
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-          ),
+          )),
         ],
       ),
     );

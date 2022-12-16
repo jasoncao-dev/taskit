@@ -56,7 +56,7 @@ taskit is a personal time-management application that helps students to record t
     }
     ```
 ## How to implement?
-- Tasks are objects with id, name, tag, date, startTime, and endTime.
+- Tasks are objects with id, name, note, tag, date, startTime, and endTime.
 - Tasks are stored in a list of type `Task`.
 - Widgets needed for the project: ListView, TextInput, AppBar Search, DateTime picker, etc.
 - First activity shows list of tasks by fetching Firebase database with query's parameter is today's date while the view shows "Fecthing your tasks...".
